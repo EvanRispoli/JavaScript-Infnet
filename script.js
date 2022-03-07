@@ -1,4 +1,5 @@
 // 1. Editar globalmente para demonstrar as funcionalidades do DOM.
+// 	1.1. Demontrar como acessar os elementos pelo console. 
 
 // Armazenando os objetos HTML
 const nmUsuario = document.querySelector(".nm-usuario");
@@ -31,7 +32,6 @@ function fecharPainel() {
   btnFechar.style.display = "none";
 }
 
-// 	1.1. Demontrar como acessar os elementos pelo console. 
 // 2. Utilizar a função autoinvocada (function () {})();
 // 	2.1. Abrir o painel de perfil.
 //	2.1.1. Acessar os elementos pelo DOM.
