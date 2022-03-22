@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+/* 
+   Esquema de cores: 
+   https://coolors.co/212738-f97068-d1d646-edf2ef-57c4e5
+*/
+
+body {
+  font-family: 'EB Garamond', serif;
+  margin: 0;
+  background-color: #edf2ef;
+}
+
+section {
+  max-width: 430px;
+  text-align: justify;
+  padding: 40px;
+  margin: 90px auto 20px;
+  border: 1px grey solid;
+  font-size: 17px;
+  line-height: 25px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  margin: 0 !important;
+  margin-bottom: 40px !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 0 !important;
+  font-size: 17px;
+}
+
+span {
+  width: 200px;
+  height: 18px;
+  border-bottom: 2px solid lightcoral;
+  padding: 3px 5px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+span:hover {
+  background: #edf2ef;
+}
+
+nav {
+  text-align: center;
+  background-color: #edf2ef;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #57c4e5;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+button.btn-salvar {
+  background: #f97068;
+  margin-left: 10px;
+}
+
+section#painel {
+  z-index: 999;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px;
+  border: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+#painel button {
+  background-color: #f97068 !important;
+}
+
+.p-toolbar {
+  text-align: center;
+}
+
+.pessoas {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.pessoas > div {
+  width: 170px;
+  padding: 5px 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  background: #57c4e5;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.pessoas > div div:first-child {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.pessoas > div div:last-child {
+  font-size: 15px;
+}
