@@ -71,7 +71,31 @@
 
     buscarUsuarios: function () {
       // Implementar a busca via API
-      
+
+      // Criar o objeto XMLHttpRequest
+      let rHttp = new XMLHttpRequest();
+
+      rHttp.open("GET", "https://fakestoreapi.com/users");
+      rHttp.addEventListener("load", function () {
+        const listaUsuarios = JSON.parse(this.responseText);
+        // console.log(listaUsuarios);
+
+        // Iterar na lista de usuários
+        for (const usuario of listaUsuarios) {
+          const nome = usuario.name.firstname;
+          const sobrenome = usuario.name.lastname;
+          const email = usuario.email;
+          const cidade = usuario.address.city;
+
+          // Retorna a div com o cartão de usuário
+          let cartao = AppContratos.criarCartao(nome, sobrenome, email, cidade);
+
+          // Adicionar na árvore DOM
+          AppContratos.painel.cartoes.appendChild(cartao);
+        }
+      });
+
+      rHttp.send();
     },
 
     criarCartao: function (nome, sobrenome, email, cidade) {
