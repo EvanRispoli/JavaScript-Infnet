@@ -1,0 +1,41 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    overflow: hidden;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+   margin-top: 100px;;
+}
+
+input[type="number"],
+button,
+select {
+    font-size: 20px;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+    height: 25%;
+}
+
+#resultado {
+    height: 25%;
+    display: flex;
+	justify-content: center;
+	align-items: flex-start;
+    font-size: 20px;
+    padding: 30px 0;
+    color: brown;
+}
